@@ -16,6 +16,40 @@
 				display: block;
 				margin-bottom: 75px;
 			}
+			.sphere {
+				border-radius: 50%;
+				width: 25px;
+				height: 25px;
+				margin: 10px;
+				transition: margin 2s;
+				background-color: #3cf;
+			}
+			.wrapper:hover .sphere {
+				margin-left: 400px;
+			}
+			.s1 {
+				transition-timing-function: linear;
+			}
+			.s2 {
+				background-color: #47dc80;
+				transition-timing-function: ease;
+			}
+			.s3 {
+				background-color: #f4e338;
+				transition-timing-function: ease-in;
+			}
+			.s4 {
+				background-color: #f98320;
+				transition-timing-function: ease-out;
+			}
+			.s5 {
+				background-color: #da2a79;
+				transition-timing-function: ease-in-out;
+			}
+			.s6 {
+				background-color: #5943d2;
+				transition-timing-function: cubic-bezier(0,1.05,1,0);
+			}
 		</style>
 	</head>
 	<body>
@@ -25,6 +59,7 @@
 			<div class="sphere s3"></div>
 			<div class="sphere s4"></div>
 			<div class="sphere s5"></div>
+			<div class="sphere s6"></div>
 		</div>
 	</body>
 </html>
