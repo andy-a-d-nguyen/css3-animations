@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<title>CSS3 Transitions</title>
+		<meta name="description" content="" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<style>
+			body {
+				margin: 100px;
+				font-family: helvetica, sans-serif;
+				color: #fff;
+			}
+			.container {
+				display: inline-block;
+				margin-bottom: 0 1em 20px 0;
+			}
+			.wrapper:hover .box {
+				width: 150px;
+				height: 150px;
+			}
+			.box {
+				background-color: #3cf;
+				border-radius: 50%;
+				width: 60px;
+				height: 60px;
+				display: table-cell;
+				vertical-align: middle;
+				text-align: center;
+				transition-property: width, height;
+			}
+			.box1 {
+				transition-duration: 500ms;
+			}
+			.box2 {
+				transition-duration: 1s;
+			}
+			.box3 {
+				transition-duration: 4s;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="wrapper">
+			<div class="container">
+				<div class="box box1">
+					500ms
+				</div>
+			</div>
+			<div class="container">
+				<div class="box box2">
+					1s
+				</div>
+			</div>
+			<div class="container">
+				<div class="box box3">
+					4s
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
