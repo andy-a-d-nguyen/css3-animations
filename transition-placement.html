@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<title>CSS3 Transitions</title>
+		<meta name="description" content="" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<style>
+			body {
+				margin: 100px;
+				font-family: helvetica, sans-serif;
+				color: #fff;
+			}
+			.wrapper {
+				display: block;
+				margin-bottom: 75px;
+			}
+			.box {
+				background-color: #3cf;
+				border-radius: 5px;
+				width: 100px;
+				height: 75px;
+				{% comment %} watch for transition from the regular state of the box {% endcomment %}
+				transition-property: all;
+				transition-duration: 1s;
+				{% comment %} shorthand - transition: all 1s; {% endcomment %}
+			}
+			.box:hover {
+				background-color: #fc3;
+				width: 200px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="wrapper">
+			<div class="box"></div>
+		</div>
+	</body>
+</html>
