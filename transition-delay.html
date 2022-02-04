@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<title>CSS3 Transitions</title>
+		<meta name="description" content="" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<style>
+			body {
+				margin: 100px;
+				font-family: helvetica, sans-serif;
+				color: #fff;
+			}
+			.wrapper {
+				display: block;
+				margin-bottom: 75px;
+			}
+			.sphere {
+				background-color: #3cf;
+				border-radius: 50%;
+				width: 50px;
+				height: 50px;
+				margin: 10px;
+				box-sizing: border-box;
+				line-height: 3;
+				text-align: center;
+				transition: margin 2s;
+				transition-timing-function: linear;
+			}
+			.wrapper:hover .sphere {
+				margin-left: 400px;
+			}
+			.s1 {
+
+			}
+			.s2 {
+				background-color: #47dc80;
+				transition-delay: .5s;
+			}
+			.s3 {
+				background-color: #f4e338;
+				transition-delay: 1s;
+			}
+			.s4 {
+				background-color: #f98320;
+				transition-delay: -1s;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="wrapper">
+			<div class="sphere s1">1</div>
+			<div class="sphere s2">2</div>
+			<div class="sphere s3">3</div>
+			<div class="sphere s4">4</div>
+		</div>
+	</body>
+</html>
