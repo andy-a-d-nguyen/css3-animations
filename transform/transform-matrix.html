@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform: Combining Transformations</title>
+    <style>
+        .wrap {
+            position: relative;
+            margin: 100px;
+        }
+        .box {
+            background-color: rgba(51, 204, 255, .5);
+            width: 100px;
+            height: 100px;
+            border-radius: 5px;
+            position: absolute;
+            transition: all 2s;
+            transition-timing-function: ease-in-out;
+        }
+        .b1 {
+            border: solid 2px #999;
+            background-color: #fff;
+        }
+        .b2 {
+            border: solid 2px #0096c6;
+            transform: matrix(1.5, 0, 0, 1.5, 0, 0);
+            /* matrix(scaleX(), skewY(), skewX(), scaleY(), translateX(), translateY()); */
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="box b1"></div>
+        <div class="box b2"></div>
+    </div>
+</body>
+</html>
