@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Transform: Perspective Origin</title>
+    <style>
+        .body {
+            font-family: "Open Sans", "Helvetica Neue", sans-serif;
+        }
+        .h2 {
+            color: #ccc;
+            font-weight: normal;
+        }
+        .wrap {
+            margin: 20px auto;
+            border-bottom: solid 1px #ccc;
+            width: 90%;
+            text-align: center;
+        }
+        .group {
+            text-align: center;
+            perspective: 200px;
+        }
+        .orig {
+            width: 180px;
+            height: 180px;
+            display: inline-block;
+            margin: 10px 15px 20px 15px;
+            background-color: #f5f5f5;
+            border: 1px #aaa solid;
+            border-radius: 5px;
+            box-shadow: 0px 3px 6px rgba(0, 0, 0, .5);
+            perspective: 200px;
+        }
+        .box {
+            background-color: rgba(0, 221, 244, .6);
+            border: 1px #3cf solid;
+            border-radius: 5px;
+            box-sizing: border-box;
+            width: 180px;
+            height: 180px;
+            padding: 20px;
+            text-align: center;
+            transform: rotateX(45deg);
+        }
+        .b1 {
+            perspective-origin: left bottom;
+        }
+        .b2 {
+            perspective-origin: 75% 75%;
+        }
+        .b3 {
+            perspective-origin: -30px 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <h2>Perspective Origin</h2>
+        <div class="orig b1">
+            <div class="box">Box 1</div>
+        </div>
+        <div class="orig b2">
+            <div class="box">Box 2</div>
+        </div>
+        <div class="orig b3">
+            <div class="box">Box 3</div>
+        </div>
+    </div>
+</body>
+</html>

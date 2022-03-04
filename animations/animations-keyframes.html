@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Animations: Keyframes</title>
+		<style>
+			.body {
+				font-family: sans-serif;
+				padding: 50px;
+				margin: 100px auto;
+			}
+			.wrap {
+				display: block;
+				margin-bottom: 75px;
+			}
+			.sphere {
+				border-radius: 50%;
+				width: 25px;
+				height: 25px;
+				margin: 10px;
+				transition: margin 2s;
+				background-color: #3cf;
+				position: relative;
+				animation-name: slide;
+				animation-duration: 2.5s;
+			}
+			.s1 {
+				animation-timing-function: ease;
+			}
+			.s2 {
+				background-color: #47dc80;
+				animation-timing-function: ease-in;
+			}
+			.s3 {
+				background-color: #f4e338;
+				animation-timing-function: ease-out;
+			}
+			.s4 {
+				background-color: #f98320;
+				animation-timing-function: ease-in-out;
+			}
+			.s5 {
+				background-color: #da2a79;
+				animation-timing-function: linear;
+			}
+			.s6 {
+				background-color: #5943d2;
+				animation-timing-function: cubic-bezier(0.03, 1.45, 0.92, 0.14);
+			}
+			@keyframes slide {
+				from {
+					left: 0;
+				}
+				to {
+					left: 400px;
+					transform: scale(2);
+					opacity: 0.5;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div class="wrap">
+			<div class="sphere s1"></div>
+			<div class="sphere s2"></div>
+			<div class="sphere s3"></div>
+			<div class="sphere s4"></div>
+			<div class="sphere s5"></div>
+			<div class="sphere s6"></div>
+		</div>
+	</body>
+</html>
